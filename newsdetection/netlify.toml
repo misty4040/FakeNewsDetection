@@ -1,5 +1,4 @@
 [build]
-  base = "newsdetection"
   publish = "dist"
   command = "npm run build"
 
