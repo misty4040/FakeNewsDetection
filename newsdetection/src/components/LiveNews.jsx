@@ -10,10 +10,6 @@ export default function LiveNews() {
   const [analyzingId, setAnalyzingId] = useState(null)
   const [factCheckResults, setFactCheckResults] = useState({})
 
-  useEffect(() => {
-    fetchNews()
-  }, [])
-
   const fetchNews = async () => {
     setIsLoading(true)
     try {
@@ -43,6 +39,10 @@ export default function LiveNews() {
       setIsLoading(false)
     }
   }
+
+  useEffect(() => {
+    fetchNews()
+  }, [])
 
   const analyzeArticle = async (article) => {
     setAnalyzingId(article.uri)
