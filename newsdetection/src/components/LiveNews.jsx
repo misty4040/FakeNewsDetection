@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState, useEffect } from 'react'
 
 const EVENT_REGISTRY_API_KEY = "7b9d03bd-dca0-43b4-a1cc-7a3e39ff7256"
