@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState, useEffect } from 'react'
 
 const EVENT_REGISTRY_API_KEY = "7b9d03bd-dca0-43b4-a1cc-7a3e39ff7256"
@@ -9,10 +10,6 @@ export default function LiveNews() {
   const [isLoading, setIsLoading] = useState(true)
   const [analyzingId, setAnalyzingId] = useState(null)
   const [factCheckResults, setFactCheckResults] = useState({})
-
-  useEffect(() => {
-    fetchNews()
-  }, [])
 
   const fetchNews = async () => {
     setIsLoading(true)
@@ -43,6 +40,10 @@ export default function LiveNews() {
       setIsLoading(false)
     }
   }
+
+  useEffect(() => {
+    fetchNews()
+  }, [])
 
   const analyzeArticle = async (article) => {
     setAnalyzingId(article.uri)

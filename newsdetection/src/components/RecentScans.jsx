@@ -94,7 +94,6 @@ export default function RecentScans() {
         {scans.map((scan) => {
           const isGreen = scan.color === 'green'
           const isRed = scan.color === 'red'
-          const isYellow = scan.color === 'yellow'
           
           const colorClass = isGreen ? 'text-green-400' : isRed ? 'text-red-400' : 'text-yellow-400'
           const bgClass = isGreen ? 'bg-green-500/20 border-green-500/40' : isRed ? 'bg-red-500/20 border-red-500/40' : 'bg-yellow-500/20 border-yellow-500/40'

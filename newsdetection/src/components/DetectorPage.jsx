@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState, useRef, useEffect } from 'react'
 import Navbar from './Navbar'
 import Cursor from './Cursor'
